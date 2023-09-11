@@ -15,18 +15,18 @@
 
     <table class="table table-striped">
         <thead>
-        <tr>
-            <th>Name</th>
-            <th>Author</th>
-            <th>Price</th>
-        </tr>
+            <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Price</th>
+            </tr>
         </thead>
         <tbody>
-        <tr th:each="book : ${books}">
-            <td th:text="${book.name}"></td>
-            <td th:text="${book.author}"></td>
-            <td th:text="${#numbers.formatDecimal(book.price, 0, 'COMMA', 2, 'POINT')}"></td>
-        </tr>
+            <tr th:each="book : ${books}">
+                <td th:text="${book.name}"></td>
+                <td th:text="${book.author}"></td>
+                <td th:text="${#numbers.formatDecimal(book.price, 0, 'COMMA', 2, 'POINT')}"></td>
+            </tr>
         </tbody>
     </table>
 </div>
