@@ -1,3 +1,4 @@
+//6410406690 Nonthipat Srisuphan
 package th.ac.ku.book;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -26,6 +27,7 @@ public class AddBookTests {
     private static WebDriver driver;
     private static WebDriverWait wait;
 
+    //6410406690 Nonthipat Srisuphan
     @FindBy(id = "nameInput")
     private WebElement nameField;
 
@@ -62,6 +64,7 @@ public class AddBookTests {
             driver.quit();
     }
 
+    //6410406690 Nonthipat Srisuphan
     @Test
     void testAddBook() {
 
